@@ -1,2 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello Ridwan, Welcome to C# World"); Console.WriteLine("Hello Ridwan, Welcome to C# World"); 
+Console.WriteLine("Hello Ridwan, Welcome to C# World"); Console.WriteLine("Hello Ridwan, Welcome to C# World");
+Console.WriteLine("Hello Ridwan, Welcome to C# World"); Console.WriteLine("Hello Ridwan, Welcome to C# World"); 
 Console.WriteLine("Hello Ridwan, Welcome to C# World");
