@@ -1,5 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello Ridwan, Welcome to C# World"); Console.WriteLine("Hello Ridwan, Welcome to C# World"); 
-Console.WriteLine("Hello Ridwan, Welcome to C# World"); Console.WriteLine("Hello Ridwan, Welcome to C# World");
-Console.WriteLine("Hello Ridwan, Welcome to C# World"); Console.WriteLine("Hello Ridwan, Welcome to C# World"); 
-Console.WriteLine("Hello Ridwan, Welcome to C# World");
+﻿void MyFirstMethod()
+{
+    Console.WriteLine("Hello, World!");
+}
+
+void MySecondMethod()
+{
+    Console.WriteLine("Welcome to C# Programming!");
+}
+
+void MyThirdMethod()
+{
+    Console.WriteLine("Let's learn C# together!");
+}
