@@ -1,10 +1,19 @@
-﻿namespace CalculatorLibrary
+﻿using System.Diagnostics;
+
+namespace CalculatorLibrary
 {
     public class CalculatorLibrary
     {
         public class Calculator
         {
-            public static double DoOperation(double num1, double num2, string op)
+            public Calculator() {
+                StreamWriter logFile = File.CreateText("calculator.log");
+                Trace.Listeners.Add(new TextWriterTraceListener(logFile));
+                Trace.AutoFlush = true;
+                Trace.WriteLine("Starting Calculator Log");
+                Trace.WriteLine(String.Format("Started at {0}", DateTime.Now.ToString()));
+            }
+            public double DoOperation(double num1, double num2, string op)
             {
                 double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
