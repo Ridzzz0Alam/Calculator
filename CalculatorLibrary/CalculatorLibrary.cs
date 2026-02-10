@@ -5,13 +5,18 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
+        // CalculatorLibrary.cs
+        JsonWriter writer;
+
         public Calculator()
         {
-            StreamWriter logFile = File.CreateText("calculator.log");
-            Trace.Listeners.Add(new TextWriterTraceListener(logFile));
-            Trace.AutoFlush = true;
-            Trace.WriteLine("Starting Calculator Log");
-            Trace.WriteLine(String.Format("Started at {0}", DateTime.Now.ToString()));
+            StreamWriter logFile = File.CreateText("calculatorlog.json");
+            logFile.AutoFlush = true;
+            writer = new JsonTextWriter(logFile);
+            writer.Formatting = Formatting.Indented;
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operations");
+            writer.WriteStartArray();
         }
         public double DoOperation(double num1, double num2, string op)
         {
